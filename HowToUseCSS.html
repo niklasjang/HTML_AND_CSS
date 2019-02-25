@@ -6,25 +6,44 @@
     <title></title>
 
     <style>
-        input:focus{
-            border : 2px solid #ff0000;
-            padding : 10px;
+        #content {
+            width : 300px;
         }
 
-        input :enabled{
-            font-size : 3em;
+        ul li {
+            list-style : none;
+            border : 1px solid :#cccccc;
+            padding :10px;
+            background-color:#b6ff00;
+            font-weight : 200;
+            font-size:20px;
         }
-        input :disabled{ 
-            color : #b200ff;
+
+        ul li a{
+            color:#000000;
+        }
+
+        ul li:nth-child(2n+1){
+            background-color : #de9333;
+        }
+        ul li:first-child, ul li:last-child{
+            background-color : #886755;
         }
     </style>
 </head>
 <body>
-    <div>
-        <form>
-            이름 : <input type="text" name="uname" /><br />
-            비밀번호 : <input type="password" name ="upw" value ="1231231"disabled="disabled" />
-        </form>
-    </div>
+   <div id="content">
+       <ul>
+           <li><a href="#">menu1</a></li>
+           <li><a href="#">menu2</a></li>
+           <li><a href="#">menu3</a></li>
+           <li><a href="#">menu4</a></li>
+           <li><a href="#">menu4</a></li>
+           <li><a href="#">menu4</a></li>
+           <li><a href="#">menu4</a></li>
+           <li><a href="#">menu4</a></li>
+
+       </ul>
+   </div>
 </body>
 </html>
