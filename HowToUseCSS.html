@@ -6,30 +6,25 @@
     <title></title>
 
     <style>
-        ul li{
-            font-size : 20px;
-            font-weight : 200;
-            color : orange;
-            width : 500px;
-            margin : 10px auto; /*윈도우 가운데 정렬*/
-            /*margin : 10px 20px 30px 40px;*/
-        }
-        
-        li:hover{
-            font-size : 3em; /*3배 커짐*/
-            color : blue;
+        input:focus{
+            border : 2px solid #ff0000;
+            padding : 10px;
         }
 
+        input :enabled{
+            font-size : 3em;
+        }
+        input :disabled{ 
+            color : #b200ff;
+        }
     </style>
 </head>
 <body>
     <div>
-        <ul>
-            <li>menu1</li>
-            <li>menu2</li>
-            <li>menu3</li>
-            <li>menu4</li>
-        </ul>
+        <form>
+            이름 : <input type="text" name="uname" /><br />
+            비밀번호 : <input type="password" name ="upw" value ="1231231"disabled="disabled" />
+        </form>
     </div>
 </body>
 </html>
