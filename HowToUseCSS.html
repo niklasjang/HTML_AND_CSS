@@ -6,33 +6,24 @@
     <title></title>
 
     <style>
-        div li{
-            background-color :#00ff21; /*div 아래에 있는 모든 후손을 선택*/
-        }
-       
-        div > p{
-            background-color :#ff0000; /*바로 아래 자손만 선택*/
-        }
+      h3~div{
+          font-size : 24px;
+          color : #0094ff;
+          font-weight : 200;
+      }
+
+      #title+div{
+          font-size : 50px;
+      }
+
+
     </style>
 </head>
 <body>
-    <div>
-        <h1>Menu</h1>
-        <ol>
-            <li> menu 1</li>
-            <li> menu 2</li>
-            <li> menu 3</li>
-            <li> menu 4</li>
-        </ol>
-
-        <p>asd
-            <ul>
-                <li> second menu 1</li>
-                <li> second menu 2</li>
-                <li> second menu 3</li>
-                <li> second menu 4</li>
-            </ul>
-        </p>
-    </div>
+    <h3 id="title">동위 선택자</h3>
+    <div>div_01</div>
+    <div>div_02</div>
+    <div>div_03</div>
+    <div>div_04</div>
 </body>
 </html>
