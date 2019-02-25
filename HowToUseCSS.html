@@ -6,46 +6,81 @@
     <title></title>
 
     <style>
-        #header, #section{
+        #header{
+            width: 500px;
             background-color:#123423;
             border-bottom : 5px;
-
+            text-align :center;
+            overflow: hidden;
         }
-        h2{
+        #wrap{
+            width : 500px;
             color: #ff6a00;
+            text-align:center;
+        }
+
+        #content {
+            width:350px;
+            color: #808080;
+            background-color: #ffd800;
+            text-align: center;
+            float: left;
+        }
+
+        #side_banner {
+            width: 150px;
+            color: #000000;
+            background-color: #ff6a00;
+            text-align: center;
+            float: left;
+        }
+
+        #footer{
+            clear : both;
+            width: 500px;
+            color : #000000;
+            background-color :#125890;
+
         }
 
         *{
             margin : 0;
             padding : 0;
         }
+
+        .menu1, .menu3{
+            color :#ff0000;
+            border :#00ff90;
+        }
+        ol li.menu{
+            font-size :30px; 
+
+        }
     </style>
 </head>
 <body>
-    <div id="header">
-        <h1>header, title of body</h1>
-        <hr />
+   <div id="header">
+       <h1>header</h1>
+   </div>
+    
+    <div id="wrap">
+        <div id="content">
+            <h2>content</h2>
+            <ol>
+                <li class="menu1">list </li>
+                <li class="menu2">list </li>
+                <li class="menu">list </li>
+                <li class="menu">list </li>
+            </ol>
+        </div>
+
+        <div id="side_banner">
+            <h3>side banner</h3>
+        </div>
     </div>
 
-    <div id="nav">
-        <ol>
-            <p>메뉴 위치</p>
-            <li>ordered list1</li>
-            <li>ordered list2</li>
-            <li>ordered list3</li>
-            <li>ordered list4</li>
-        </ol>
-        <hr />
-    </div>
-
-    <div id="section">
-        <h2> What is HTML5?</h2>
-        <p> HTML% is good"</p>
-        <hr />
-    </div="section">
-
-    <div id="footer">
-        <p>detail information</p>
-    </div="footer">
+       <div id="footer">
+           <h1>FOOTER</h1>
+       </div>
 </body>
 </html>
