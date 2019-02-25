@@ -6,81 +6,49 @@
     <title></title>
 
     <style>
-        #header{
-            width: 500px;
-            background-color:#123423;
-            border-bottom : 5px;
-            text-align :center;
-            overflow: hidden;
-        }
-        #wrap{
-            width : 500px;
-            color: #ff6a00;
-            text-align:center;
-        }
+       input{
+           color : #ff0000;
+       }
 
-        #content {
-            width:350px;
-            color: #808080;
-            background-color: #ffd800;
-            text-align: center;
-            float: left;
-        }
+       input[type=text]{
+           color : #00ffff;
+       }
 
-        #side_banner {
-            width: 150px;
-            color: #000000;
-            background-color: #ff6a00;
-            text-align: center;
-            float: left;
-        }
-
-        #footer{
-            clear : both;
-            width: 500px;
-            color : #000000;
-            background-color :#125890;
-
-        }
-
-        *{
-            margin : 0;
-            padding : 0;
-        }
-
-        .menu1, .menu3{
-            color :#ff0000;
-            border :#00ff90;
-        }
-        ol li.menu{
-            font-size :30px; 
-
-        }
+       img[src]{
+           border : 30px;
+       }
     </style>
 </head>
 <body>
-   <div id="header">
-       <h1>header</h1>
-   </div>
-    
-    <div id="wrap">
-        <div id="content">
-            <h2>content</h2>
-            <ol>
-                <li class="menu1">list </li>
-                <li class="menu2">list </li>
-                <li class="menu">list </li>
-                <li class="menu">list </li>
-            </ol>
-        </div>
-
-        <div id="side_banner">
-            <h3>side banner</h3>
-        </div>
-    </div>
-
-       <div id="footer">
-           <h1>FOOTER</h1>
-       </div>
+    <form action="Address where datas shoud be sent" method="get">
+        이름 : <input type="text" name="uname" /> <br />
+        아이디 : <input type="text" name="uname" /> <br />
+        비밀번호 : <input type="password" name="upw" /> <br />
+        연락처 : <input type="text" name="uphone1" size="5" /> -
+        <input type="text" name="uphone2" size="5" /> -
+        <input type="text" name="uphone3" size="5" /> <br />
+        사진 : <input type="file" name="upic" /> <br />
+        성별구분 : <input type="radio" name="gender" value="m" />남
+        <input type="radio" name="gender" value="w" />여 <br />
+        사용언어 : <input type="checkbox" name="lan" value="kor" checked="checked" /> 한글
+        <input type="checkbox" name="lan" value="eng" checked="checked" /> 영어
+        <input type="checkbox" name="lan" value="jap" checked="checked" /> 일어
+        자기소개 : <textarea rows="5" cols="20">간단하게 입력하세요.</textarea> <br />
+        국적 :
+        <select>
+            <option>KOREA</option>
+            <option>123</option>
+            <option>234A</option>
+            <option>sdfsdfEA</option>
+        </select> <br />
+        좋아하는 음식 :
+        <select multiple="multiple">
+            <option>KOREA</option>
+            <option>123</option>
+            <option>234A</option>
+            <option>sdfsdfEA</option>
+        </select> <br />
+        <input type="submit" />
+    </form>
 </body>
 </html>
