@@ -1,0 +1,27 @@
+﻿@charset "utf-8";
+
+#content {
+    width: 300px;
+}
+
+ul li {
+    list-style: none;
+    border: 1px solid :#cccccc;
+    padding: 10px;
+    background-color: #b6ff00;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+    ul li a {
+        color: #000000;
+    }
+
+    ul li:nth-child(2n+1) {
+        background-color: #de9333;
+    }
+
+    ul li:first-child, ul li:last-child {
+        background-color: #886755;
+    }
+
