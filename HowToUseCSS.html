@@ -6,24 +6,30 @@
     <title></title>
 
     <style>
-      h3~div{
-          font-size : 24px;
-          color : #0094ff;
-          font-weight : 200;
-      }
-
-      #title+div{
-          font-size : 50px;
-      }
-
+        ul li{
+            font-size : 20px;
+            font-weight : 200;
+            color : orange;
+            width : 500px;
+            margin : 10px auto; /*윈도우 가운데 정렬*/
+            /*margin : 10px 20px 30px 40px;*/
+        }
+        
+        li:hover{
+            font-size : 3em; /*3배 커짐*/
+            color : blue;
+        }
 
     </style>
 </head>
 <body>
-    <h3 id="title">동위 선택자</h3>
-    <div>div_01</div>
-    <div>div_02</div>
-    <div>div_03</div>
-    <div>div_04</div>
+    <div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+    </div>
 </body>
 </html>
